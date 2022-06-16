@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clockify</title>
+    <link rel="stylesheet" href="/styles/index.css">
+    <script src="/scripts/index.js"></script>
+</head>
+<body>
+    <header>
+        <h3 class="title"> Clockify</h3>
+        <p class="userName">Manindra</p>
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <div class="navLink">
+                <p class="navText">TIME TRACKER</p>
+            </div>
+        </div>
+        <div class="actionView">
+            <div class="timer">
+                <input type="text"/>
+                <input type="button" onclick="showCreatePopup()">create project</input>
+                <p id="projectName"></p>
+            </div>
+            <div class="history">
+
+            </div>
+        </div>
+    </div>
+    <div id="createPopup" class="popup">
+        <div>
+            <input id="name" type="text" placeholder="projectName"/>
+            <input id="client" type="text" placeholder="clientName"/>
+            <div class="actions">
+                <input type="button" onclick="closeCreatePopup()">Close</input>
+                <input type="button" onclick="createProject()">Create</input>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
